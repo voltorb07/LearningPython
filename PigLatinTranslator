@@ -1,16 +1,21 @@
+#This is a simple Pig Latin Generator.  
+#It takes a word from the user, removes the first letter and places it at the end.
+
 pyg = 'ay'
 
 original = raw_input('Enter a word:')
 
 word = original.lower()
+
 first = word[0]
+
 restofword = word[1:9]
+
 new_word = restofword + first + pyg
 
 
-
-
-
+#This statement ensures you cannot create a username with no characters and 
+#that it must be alpha-numeric
 if len(original) > 0 and original.isalpha():
     print new_word
 else:
